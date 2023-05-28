@@ -1,0 +1,338 @@
+Изпит по "Основи на програмирането" 
+
+Software University @ Facebook
+Software University @ Facebook
+Software University @ Twitter
+Software University @ Twitter
+Software University @ YouTube
+Software University @ YouTube
+Software University: Email Us
+Software University: Email Us 
+
+
+Задача 6. Коледен турнир 
+
+Напишете програма, която проследява представянето на вашия отбор на благотворителен коледен турнир. 
+Всеки ден получавате имена на игри до команда "Finish". Със спечелването на всяка една игра печелите по 
+20лв. за благотворителност. Трябва да изчислите колко пари сте спечелили на края на деня. Ако имате 
+повече спечелени игри, отколкото загубени – вие сте победители този ден и увеличавате парите от него с 
+10%. При приключване на турнира ако през повечето дни сте били победители печелите турнира и 
+увеличавате всичките спечелени пари с 20%. 
+
+Никога няма да имате равен брой спечелени и загубени игри. 
+
+Вход 
+
+Първоначално от конзолата се прочита броя дни на турнира – цяло число в интервала [1… 20] 
+
+До получаване на командата "Finish" се чете: 
+
+• Спорт – текст 
+o Резултат – текст с възможности: "win" или "lose" 
+
+
+
+
+
+За всеки спорт се прочита: 
+
+Изход 
+
+Накрая се отпечатва един ред: 
+
+• Ако сте спечелили турнира: 
+
+
+ "You won the tournament! Total raised money: {спечелените пари}" 
+
+• Ако сте загубили на турнира: 
+
+
+"You lost the tournament! Total raised money: {спечелените пари}" 
+
+Парите да бъдат форматирани до втората цифра след десетичния знак. 
+
+Примерен вход и изход 
+
+Вход 
+
+Изход 
+
+Обяснения 
+
+2 
+
+volleyball 
+
+win 
+
+football 
+
+lose 
+
+basketball 
+
+win 
+
+Finish 
+
+golf 
+
+win 
+
+tennis 
+
+win 
+
+badminton 
+
+win 
+
+Finish 
+
+You won the 
+tournament! 
+Total raised 
+money: 132.00 
+
+Турнирът е 2 дена. 
+
+Първият ден: 
+
+Играем волейбол и печелим -> 20лв. 
+
+Играем футбол и губим -> 0лв. 
+
+Играем баскетбол и печелим -> 20лв. 
+
+Получаваме команда Finish и игрите за деня приключват. Спечелените 
+пари 20 + 0 + 20 = 40лв. Имаме повече спечелени игри, отколкото 
+загубени съответно увеличаваме парите от деня с 10% -> 44лв. 
+
+Втори ден: 
+
+Играем голф и печелим -> 20лв. 
+
+Играем тенис и печелим -> 20лв. 
+
+Играем бадминтон и печелим -> 20лв. 
+
+Получаваме команда Finish и игрите за деня приключват. Спечелените 
+пари 20 + 20 + 20 = 60лв. Имаме само спечелени игри съответно 
+увеличаваме парите от деня с 10% -> 66лв. 
+
+Спечелените пари от двата дена: 44 + 66 = 110лв. 
+
+Тъй като имаме повече победи, отколкото загуби, печелим турнира и 
+увеличаваме парите с 20% -> 132лв. 
+
+
+
+
+Software University @ Facebook
+Software University @ Facebook
+Software University @ Twitter
+Software University @ Twitter
+Software University @ YouTube
+Software University @ YouTube
+Software University: Email Us
+Software University: Email Us
+3 
+
+darts 
+
+lose 
+
+handball 
+
+lose 
+
+judo 
+
+win 
+
+Finish 
+
+snooker 
+
+lose 
+
+swimming 
+
+lose 
+
+squash 
+
+lose 
+
+table tennis 
+
+win 
+
+Finish 
+
+volleyball 
+
+win 
+
+basketball 
+
+win 
+
+Finish 
+
+You lost the 
+tournament! 
+Total raised 
+money: 84.00 
+
+ 
+
+
+
+ 
+
+JavaScript - Примерен вход и изход 
+
+Вход 
+
+Изход 
+
+Обяснения 
+
+(["2", 
+
+"volleyball", 
+
+"win", 
+
+"football", 
+
+"lose", 
+
+"basketball", 
+
+"win", 
+
+"Finish", 
+
+"golf", 
+
+"win", 
+
+"tennis", 
+
+"win", 
+
+"badminton", 
+
+"win", 
+
+"Finish"]) 
+
+You won the 
+tournament! 
+Total raised 
+money: 
+132.00 
+
+Турнирът е 2 дена. 
+
+Първият ден: 
+
+Играем волейбол и печелим -> 20лв. 
+
+Играем футбол и губим -> 0лв. 
+
+Играем баскетбол и печелим -> 20лв. 
+
+Получаваме команда Finish и игрите за деня приключват. Спечелените 
+пари 20 + 0 + 20 = 40лв. Имаме повече спечелени игри, отколкото 
+загубени съответно увеличаваме парите от деня с 10% -> 44лв. 
+
+Втори ден: 
+
+Играем голф и печелим -> 20лв. 
+
+Играем тенис и печелим -> 20лв. 
+
+Играем бадминтон и печелим -> 20лв. 
+
+Получаваме команда Finish и игрите за деня приключват. Спечелените 
+пари 20 + 20 + 20 = 60лв. Имаме само спечелени игри съответно 
+увеличаваме парите от деня с 10% -> 66лв. 
+
+Спечелените пари от двата дена: 44 + 66 = 110лв. 
+
+Тъй като имаме повече победи, отколкото загуби, печелим турнира и 
+увеличаваме парите с 20% -> 132лв. 
+
+(["3", 
+
+"darts", 
+
+"lose", 
+
+"handball", 
+
+"lose", 
+
+"judo", 
+
+"win", 
+
+"Finish", 
+
+"snooker", 
+
+"lose", 
+
+You lost the 
+tournament! 
+Total raised 
+money: 84.00 
+
+ 
+
+
+
+
+Software University @ Facebook
+Software University @ Facebook
+Software University @ Twitter
+Software University @ Twitter
+Software University @ YouTube
+Software University @ YouTube
+Software University: Email Us
+Software University: Email Us
+"swimming", 
+
+"lose", 
+
+"squash", 
+
+"lose", 
+
+"table tennis", 
+
+"win", 
+
+"Finish", 
+
+"volleyball", 
+
+"win", 
+
+"basketball", 
+
+"win", 
+
+"Finish"]) 
+
+
+
+ 
+
+ 
+
+
