@@ -5,8 +5,6 @@ This repository contains the starter tasks and exercises from my JavaScript cour
 ## Contents
 
 - Exercises from May 2023
-- Exercises from June 2023
-- Exercises from July 2023
 
 ## Description
 
